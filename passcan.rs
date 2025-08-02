@@ -295,12 +295,4 @@ fn main() {
     }
 }
 
-// Add to Cargo.toml dependencies:
-// rayon = "1.8"
-// notify = "6"
-// prettytable = "0.12"
-// indicatif = "0.17"
-// colored = "2"
-// walkdir = "2"
-// regex = "1"
-// tabwriter = "1"
+
