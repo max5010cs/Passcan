@@ -25,32 +25,9 @@ Use it before every commit or deployment to keep your codebase clean and secure.
 
 ---
 
-## 📦 Installation
-
-### 🧪 Local Development (for testing or contributing)
-
-```bash
-git clone https://github.com/yourusername/passcan.git
-cd passcan
-cargo run -- .
-
-# Want Global installation (to use anywhere)
-
-cargo install --path .
-
-# Scan current directory
-passcan .
-
-# Scan another folder
-passcan /your/project/path
-
-# Watch mode (auto-scan on changes)
-passcan --watch .
 
 
-
-
-🧰 Built With
+### 🧰 Built With
 🦀 Rust — fast and memory-safe
 
 📂 walkdir — recursive file traversal
@@ -72,4 +49,27 @@ Improve team security hygiene
 
 🙌 Contributing
 Pull requests are welcome! If you have ideas or suggestions, feel free to open an issue or PR.
+
+
+
+## 📦 Installation
+
+### 🧪 Local Development (for testing or contributing)
+
+```bash
+git clone https://github.com/yourusername/passcan.git
+cd passcan
+cargo install --path .
+passcan .
+### Run passcan . anwywhere after proper installation
+
+# Scan another folder
+passcan /your/project/path
+
+# Watch mode (auto-scan on changes)
+passcan --watch .
+
+
+
+
 
