@@ -1,39 +1,75 @@
-# 🦀 passcan
+# 🛡️ passcan
 
-> A fast, Rust-powered CLI tool to scan your codebase for secrets before deployment.
+> A fast CLI tool built with Rust to detect secrets in your code before pushing to production.
 
-## ⚡ Overview
+---
 
-`passcan` is a high-performance command-line tool written in **Rust**, designed to detect sensitive information in your files before pushing to production.
+## ✨ What is passcan?
 
-It scans for:
+`passcan` is a lightweight command-line scanner that helps you **catch hardcoded secrets** like:
 
-- API keys (OpenAI, AWS, etc.)
-- Hardcoded passwords and secrets
-- Slack webhooks, tokens, and more
+- 🔑 API keys (OpenAI, AWS, etc.)
+- 🔒 Passwords in `.env` or source files
+- 🧵 Tokens (Slack, generic auth tokens)
 
-Perfect for developers who care about shipping safe code 🚀
+Use it before every commit or deployment to keep your codebase clean and secure.
 
-## 🔧 Built With
+---
 
-- 🦀 **Rust** for speed and reliability
-- 📁 `walkdir` for directory traversal
-- 🎨 `colored` for styled output
-- 🔍 Regex-powered pattern detection
+## ⚙️ How it works
+
+- Scans common code and config files in the directory you provide
+- Uses `regex` patterns to match known secret formats
+- Shows live progress and a summary of what it finds
+- Works super fast — thanks to Rust!
+
+---
 
 ## 📦 Installation
 
-### 🚀 Install via Cargo (Local Dev)
+### 🧪 Local Development (for testing or contributing)
 
 ```bash
 git clone https://github.com/yourusername/passcan.git
 cd passcan
+cargo run -- .
+
+# Want Global installation (to use anywhere)
+
 cargo install --path .
 
-
-### Manual Build
-cargo build --release
-./target/release/passcan /path/to/scan
-
-###  Usage
+# Scan current directory
 passcan .
+
+# Scan another folder
+passcan /your/project/path
+
+# Watch mode (auto-scan on changes)
+passcan --watch .
+
+
+
+
+🧰 Built With
+🦀 Rust — fast and memory-safe
+
+📂 walkdir — recursive file traversal
+
+🎨 colored — styled terminal output
+
+🔎 regex — pattern detection
+
+⌚ notify — optional file change watching
+
+#####   💡 Why You Should Use It
+Even one leaked key can cost a lot. passcan helps you:
+
+Catch secrets before committing
+
+Protect your production environment
+
+Improve team security hygiene
+
+🙌 Contributing
+Pull requests are welcome! If you have ideas or suggestions, feel free to open an issue or PR.
+
