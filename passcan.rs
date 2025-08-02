@@ -22,7 +22,7 @@ const BANNER: &str = r#"
 Passcan - Scan your codebase for secrets before pushing!
 "#;
 
-const GITHUB_LINK: &str = "https://github.com/max5010cs/passcan";
+const GITHUB_LINK: &str = "https://github.com/max5010cs/Passscan.git";
 
 const IGNORED_FILES: &[&str] = &[
     "package-lock.json", "yarn.lock", "Cargo.lock", ".gitignore", "README.md",

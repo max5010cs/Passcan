@@ -57,7 +57,7 @@ Pull requests are welcome! If you have ideas or suggestions, feel free to open a
 ### 🧪 Local Development (for testing or contributing)
 
 ```bash
-git clone https://github.com/yourusername/passcan.git
+git clone https://github.com/max5010cs/Passscan.git
 cd passcan
 cargo install --path .
 passcan .
