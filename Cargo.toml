@@ -1,0 +1,17 @@
+[package]
+name = "passcan"
+version = "0.1.0"
+edition = "2021"
+authors = ["Max Yuldashev <max5010cs@gmail.com>"]
+description = "CLI tool to scan for secrets before pushing to production"
+
+[[bin]]
+name = "passcan"
+path = "passcan.rs"
+
+[dependencies]
+regex = "1"
+walkdir = "2"
+colored = "2"
+indicatif = "0.17"
+tabwriter = "1"
