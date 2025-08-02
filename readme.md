@@ -58,7 +58,7 @@ Pull requests are welcome! If you have ideas or suggestions, feel free to open a
 
 ```bash
 git clone https://github.com/max5010cs/Passscan.git
-cd passcan
+cd Passcan
 cargo install --path .
 passcan .
 ### Run passcan . anwywhere after proper installation
